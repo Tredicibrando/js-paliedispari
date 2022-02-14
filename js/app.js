@@ -67,23 +67,24 @@ let sommaPari = false;
 
 console.log(userInput, randomNumber);
 
-if (!isNaN(userInput)) {
-    sommaInput = userInput + randomNumber;
- } 
-
- console.log(sommaInput);
-
-if ( sommaInput % 2 == 0){
-    sommaPari = true;
-    console.log(sommaInput += ' è pari');
-} else {
-     console.log(sommaInput += ' è dispari');
- }
 
 
 function checkpari ( userInput ){
+
+    if (!isNaN(userInput)) {
+        sommaInput = userInput + randomNumber;
+     } 
+    
+    if ( sommaInput % 2 == 0){
+        sommaPari = true;
+        console.log(sommaInput += ' è pari');
+    } else {
+         console.log(sommaInput += ' è dispari');
+     }
     
 }
+
+console.log(checkpari(userInput))
  
 
 
